@@ -9,7 +9,6 @@
         <!-- /Favicon -->
     </x-eduka::head>
     <x-eduka::body class="font-primary bg-repeat antialised bg-background-900">
-        <x-eduka::responsive-breakpoints></x-eduka::responsive-breakpoints>
 
         <div class="h-screen flex justify-center">
             <div class="w-2/5 flex flex-col justify-center">
