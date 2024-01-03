@@ -6,7 +6,7 @@
 
             <div class="w-3/6 flex flex-col mx-auto justify-center space-y-6">
                 <div class="flex flex-col">
-                    <h2 class="text-3xl font-medium text-[#263154]">Reset password</h2>
+                    <h2 class="text-3xl font-medium text-[#263154]">{{ __('Forgot Password') }}</h2>
                 </div>
 
                 @if (session('status'))
@@ -57,5 +57,4 @@
             <div class="w-full h-full" style="background-image: url({{ Vite::image('login-bg-01.png') }})"></div>
         </div>
     </div>
-
 @endsection
