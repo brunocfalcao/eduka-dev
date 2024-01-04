@@ -3,6 +3,7 @@
 namespace Eduka\Dev;
 
 use Eduka\Abstracts\Classes\EdukaServiceProvider;
+use Illuminate\Support\Facades\Vite;
 
 final class DevServiceProvider extends EdukaServiceProvider
 {
@@ -11,6 +12,8 @@ final class DevServiceProvider extends EdukaServiceProvider
         $this->dir = __DIR__;
 
         config()->set('mail.mailers.postmark.token', env('POSTMARK_TOKEN'));
+
+        Vite::macro('image', fn (string $asset) => $this->asset("resources/assets/images/{$asset}"));
 
         parent::boot();
     }
