@@ -8,8 +8,11 @@ final class DevServiceProvider extends EdukaServiceProvider
 {
     public function boot()
     {
-        $this->customViewNamespace(__DIR__.'/../resources/views', 'backend');
+        $this->dir = __DIR__;
+
         config()->set('mail.mailers.postmark.token', env('POSTMARK_TOKEN'));
+
+        parent::boot();
     }
 
     public function register()
