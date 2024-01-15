@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full bg-primary">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,18 @@
 
 </head>
 
-<body class="antialiased">
+<body class="antialiased h-full">
 
-@yield('content')
+    @include('backend::layouts.partials.sidenav')
 
-<!-- Scripts -->
-@stack('scripts')
+    <main class="py-10 lg:pl-72">
+        <div class="px-4 sm:px-6 lg:px-8">
+            @yield('content')
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    @stack('scripts')
 </body>
+
 </html>
