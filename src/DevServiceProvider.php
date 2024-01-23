@@ -11,7 +11,7 @@ final class DevServiceProvider extends EdukaServiceProvider
     {
         $this->dir = __DIR__;
 
-        $this->customViewNamespace(__DIR__ . '/../resources/views', 'backend');
+        $this->customViewNamespace(__DIR__.'/../resources/views', 'backend');
 
         config()->set('mail.mailers.postmark.token', env('POSTMARK_TOKEN'));
 
