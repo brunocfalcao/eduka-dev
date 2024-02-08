@@ -13,9 +13,8 @@ final class DevServiceProvider extends EdukaServiceProvider
 
         $this->customViewNamespace(__DIR__.'/../resources/views', 'backend');
 
-        config()->set('mail.mailers.postmark.token', env('POSTMARK_TOKEN'));
-
-        Vite::macro('image', fn (string $asset) => $this->asset("resources/assets/images/{$asset}"));
+        //config()->set('mail.mailers.postmark.token', env('POSTMARK_TOKEN'));
+        //Vite::macro('image', fn (string $asset) => $this->asset("resources/assets/images/{$asset}"));
 
         parent::boot();
     }
