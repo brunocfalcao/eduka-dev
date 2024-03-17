@@ -6,7 +6,7 @@
               <img class="h-8 w-auto" src="{{ Vite::image('mastering-nova-mascot.svg') }}" alt="mastering nova">
 
               <span class="leading-normal tracking-tighter font-medium ml-2 text-2xl text-white">
-                  {{ Nereus::organization()->name }}
+                  {{ Nereus::backend()->name }}
               </span>
           </div>
           <nav class="flex flex-1 flex-col">
